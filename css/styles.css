@@ -16,6 +16,13 @@ color:black;
 background-color: white;
 opacity: 0.5;width: 75%;height: 100%;
 }
+#para2 {
+    position: absolute;
+    top:0%;
+    color:black;
+    background-color: white;
+    opacity: 0.5;width: 75%;height: 100%;
+    }
 .images {
     width: 40%;
     height: 200px;
