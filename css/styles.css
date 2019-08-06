@@ -49,5 +49,28 @@ body {
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 .about{
-  margin-top
+  margin-top:100px;
+  margin-bottom: 100px;
+}
+
+.about1{
+  width:100%;
+}
+
+#col-sm-6{
+  margin-top:40px;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.22em;
+}
+
+.services{
+  height:500px;
+}
+
+.ser1{
+  width:100%;
+}
+#Wser{
+  padding-left:40px;
+  margin-top:15px;
 }
