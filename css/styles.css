@@ -1,6 +1,5 @@
 body {
   font-family: "Lato", sans-serif;
-  /* background-color: aquamarine; */
 }
 .sidepanel  {
   width: 0;
@@ -46,4 +45,9 @@ body {
 
 .openbtn:hover {
   background-color:#444;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+.about{
+  margin-top
 }
