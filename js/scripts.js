@@ -1,7 +1,7 @@
-function openNav() {
+function menuOpen() {
   document.getElementById("mySidepanel").style.width = "250px";
 }
 
-function closeNav() {
+function menuClose() {
   document.getElementById("mySidepanel").style.width = "0";
 }
