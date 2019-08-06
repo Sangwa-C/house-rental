@@ -1,0 +1,13 @@
+#About{
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    margin: 3px 0;
+    display: block;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
