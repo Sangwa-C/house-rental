@@ -1,3 +1,22 @@
 h2 {
     text-align: center;
 }
+.services {
+    margin-left:5%;
+}
+.houses {
+    width: 80%;
+    height:400px;
+    position: relative;
+}
+#para1 {
+position: absolute;
+top:0%;
+color:black;
+background-color: white;
+opacity: 0.5;width: 75%;height: 100%;
+}
+.images {
+    width: 40%;
+    height: 200px;
+}
