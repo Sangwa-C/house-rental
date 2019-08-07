@@ -48,9 +48,19 @@ body {
   background-color:#444;
 }
 
+.logo{
+  float:right;
+  height:99px;
+  width:160px;
+  margin-right:200px;
+}
+
 #navbar{
   background-color:black;
-  height:90px;
+  height:100px;
+}
+h5{
+  font-size:2.5em;
 }
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
@@ -61,44 +71,54 @@ body {
 
 .about1{
   width:100%;
+  opacity: 0.8;
 }
 
-#col-sm-6{
+.about1:hover {
+  opacity: 1
+}
+
+.about1 .ser1{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#col-sm-6 {
   margin-top:40px;
-  font-family: 'Raleway', sans-serif;
   font-size:1.22em;
 }
 
-.services{
-  height:500px;
+
+#Wser{
+  font-size:1.22em;
 }
+.services{
+  height:350px;
+}
+
 
 .ser1{
   width:100%;
+  opacity: 0.8;
 }
+.ser1:hover {
+  opacity: 1
+}
+
 #Wser{
   padding-left:40px;
   margin-top:15px;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
 .footer{
   text-align: center;
   border-top:solid black;
+  background-color: black;
+  color:white;
 }
 
 .container{
-  margin-top:60px;
-  margin-bottom:10px;
+  margin-top:15px;
 }
 
 
