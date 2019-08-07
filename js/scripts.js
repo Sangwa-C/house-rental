@@ -6,3 +6,4 @@ function menuClose() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
+

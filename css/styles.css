@@ -121,5 +121,23 @@ h5{
   margin-top:15px;
 }
 
+/* for the contact section */
+
+#form{
+margin-top:90px;
+height:600px;
+}
+
+input,textarea{
+  /* margin-top:30px; */
+}
+
+#contact{
+  background-image: url("https://a0.muscache.com/im/pictures/8495303d-7c60-4894-aadd-7e0645754817.jpg?aki_policy=xx_large");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:900px;
+  line-height:50px;
+}
 
 
