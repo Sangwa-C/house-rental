@@ -20,14 +20,14 @@ span {
     height:400px;
     position: relative;
 }
-#para1 {
+#para1 ,#para4 ,#para5 {
 position: absolute;
 top:0%;
 color:black;
 background-color: white;
 opacity: 0.8;width: 78%;height: 90%;
 }
-#para2 {
+#para2 ,#para3  {
     position: absolute;
     top:0%;
     color:black;
@@ -40,10 +40,10 @@ opacity: 0.8;width: 78%;height: 90%;
     margin-left: 10%;
 }
 /*   */
-/* The grid: Four equal columns that floats next to each other */
+/* The grid: equal columns that floats next to each other */
 .column {
     float: left;
-    width: 15%;
+    width: 10%;
     padding: 10px;
   }
   
@@ -71,7 +71,7 @@ opacity: 0.8;width: 78%;height: 90%;
   }
   
   /* Expanding image text */
-  #imgtext , #imgtext1 {
+  #imgtext , #imgtext1 ,#imgtext2 ,#imgtext3,#imgtext4 {
     position: absolute;
     bottom: 15px;
     left: 15px;
