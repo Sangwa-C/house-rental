@@ -37,14 +37,20 @@ body {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color:black;
   color: whitesmoke;
   padding: 10px 15px;
   border: none;
+  margin-top:20px;
 }
 
 .openbtn:hover {
   background-color:#444;
+}
+
+#navbar{
+  background-color:black;
+  height:90px;
 }
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
@@ -74,3 +80,26 @@ body {
   padding-left:40px;
   margin-top:15px;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.footer{
+  text-align: center;
+  border-top:solid black;
+}
+
+.container{
+  margin-top:60px;
+  margin-bottom:10px;
+}
+
+
+
