@@ -1,43 +1,45 @@
-#About{
+h3{
     font-size: 30px;
     text-align: center;
 }
-p{
-    font-size: 30px;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: cursive;
-}
 #img1{
     width: 500px;
-    height: 500px;
-    float: left;
+    height: 450px;
+    padding-top: 100px;
 }
 #p1{
     font-family: cursive;
     font-size: 20px;
     float: right;
+    padding-top: 110px;
 }
 #img2{
     width: 500px;
-    height: 500px;
+    height: 450px;
     float: right;
+    clear: right;
+    padding-top: 100px;
+    
 }
 #p2{
     font-family: cursive;
     font-size: 20px;
+    text-align: left;
     float: left;
-}
+    clear:left;
+    padding-top: 160px;
+   
+} 
+
 #img3{
     width: 500px;
-    height: 500px;
+    height: 450px;
     float: left;
+    padding-top: 100px;
 }
 #p3{
     font-family: cursive;
     font-size: 20px;
     float: right;
+    padding-top: 110px;
 }
