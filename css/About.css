@@ -4,7 +4,7 @@ h3{
     font-family: sans-serif;
     font-weight: bold;
     color: rgb(56, 12, 12);
-    padding-top: 200px;
+    padding-top: 100px;
 }
 img{
     width: 700px;
@@ -23,6 +23,18 @@ p{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-top: 40px;
+}
+.keke{
+    background-image: url("../images/img.jpg");
+    background-size: cover;
+    width:2000px;
+    height: 200px;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
 }
 /* #img2{
     width: 500px;
