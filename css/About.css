@@ -1,4 +1,4 @@
-h3{
+h2{
     font-size: 30px;
     text-align: center;
     font-family: sans-serif;
@@ -28,40 +28,9 @@ p{
     background-image: url("../images/img.jpg");
     background-size: cover;
     width:2000px;
-    height: 200px;
+    height: 400px;
     padding-top: 10%;
     padding-bottom: 4%;
 }
-h2{
-    font-size: 30px;
-    text-align: center;
-}
-/* #img2{
-    width: 500px;
-    height: 450px;
-    float: right;
-    clear: right;
-    padding-top: 100px;  
-}
-#p2{
-    font-family: cursive;
-    font-size: 20px;
-    text-align: left;
-    float: left;
-    clear:left;
-    padding-top: 160px;
-   
-} 
 
-#img3{
-    width: 500px;
-    height: 450px;
-    float: left;
-    padding-top: 100px;
-}
-#p3{
-    font-family: cursive;
-    font-size: 20px;
-    float: right;
-    padding-top: 110px;
-} */
+
