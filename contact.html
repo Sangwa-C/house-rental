@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>House Rental</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -32,32 +33,46 @@
   <!--End of nav bar-->
   <div id="contact">
     <div class="container">
-      <div class="well" id="form">
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+      <div class="well" id="form" >
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2><br>
         <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.</p>
+        <form action="mail to:chelseasabinesangwa@gmail.com" method="post" enctype="text/plain">
         <div class="row">
-          <div class="col-sm-6">
-            
-            <input type="text" id="name" name="name" class="form-control"  required> 
-            <label for="name" class="">Your name</label>
-          </div>
-          <div class="col-sm-6">
-            
-            <input required type="text" id="email" name="email" class="form-control">
-            <label for="email" class="">Your email</label>
-          </div>
-          <div class="col-sm-12">
-            
-            <input required type="text" id="subject" name="subject" class="form-control">
-            <label for="subject" class="">Subject</label>
-          </div>
-          <div class="col-sm-12">
+          <div class="col-sm-9">
+            <div class="col-sm-6">
+              <input type="text" id="name" name="name" class="form-control"  required> 
+              <label for="name" class=""> <i class="fa fa-user"></i> Your name</label>
+            </div>
+            <div class="col-sm-6">
+              <input required type="text" id="email" name="email" class="form-control">
+              <label for="email" class=""> <i class="fa fa-envelope"></i> Your email</label>
+            </div>
+            <div class="col-sm-12">
+              <input required type="text" id="subject" name="subject" class="form-control">
+              <label for="subject" class="">Subject</label>
+            </div>
+            <div class="col-sm-12">
               <textarea required type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-              <label for="message">Your message</label>
+              <label for="message"> <i class='fa fa-comment'></i> Your message</label>
+            </div>
+            <button type="button" class="btn btn-info" type="submit" id="send" name="send">Send</button>
+          </div>
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li><i class="fa fa-institution"></i>
+                <p>Kigali City, KK 196, RWANDA</p>
+              </li>
+              <li><i class='fa fa-phone'></i>
+                <p>+ 250 787 024 94</p>
+              </li>
+              <li><i  class='fa fa-envelope'></i>
+                <p>contact@Galacti-houses.com</p>
+              </li>
+            </ul>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit" name="send">Send</button>
+      </form>  
       </div>
     </div>
   </div>
