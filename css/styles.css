@@ -64,52 +64,45 @@ h5{
 }
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-.about{
-  margin-top:100px;
-  margin-bottom: 100px;
+.image{
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/01/a6/85/e5/sunset-beach-house.jpg");
+  /* background-attachment: fixed; */
+  height:400px;
+  background-size:cover;
 }
 
-.about1{
-  width:100%;
-  opacity: 0.8;
+.quotes{
+  font-size: 3em;
+  padding:10%; 
+  color: white; 
+  font-family: 'Dancing Script', cursive;
 }
 
-.about1:hover {
-  opacity: 1
+.dontknow{
+  font-family: 'Grenze', serif;
+  height:1500px;
+  /* margin:100px; */
+  font-size:1.6em
 }
 
-.about1 .ser1{
-  font-family: 'Poppins', sans-serif;
-}
-
-
-#col-sm-6 {
-  margin-top:40px;
-  font-size:1.22em;
-}
-
-
-#Wser{
-  font-size:1.22em;
-}
-.services{
-  height:350px;
+.city{
+  background-color:#EFF9F6;
+  padding:100px;
+  padding-left:200px;
 }
 
 
-.ser1{
-  width:100%;
-  opacity: 0.8;
-}
-.ser1:hover {
-  opacity: 1
-}
 
-#Wser{
-  padding-left:40px;
-  margin-top:15px;
-}
 
+
+
+
+
+
+
+
+
+/* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
 .footer{
   text-align: center;
   border-top:solid black;
@@ -127,10 +120,6 @@ h5{
 margin-top:90px;
 height:600px;
 border-radius:50px;
-}
-
-input,textarea{
-  /* margin-top:30px; */
 }
 
 #contact{
