@@ -37,26 +37,26 @@
         <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2><br>
         <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.</p>
-        <form action="mail to:chelseasabinesangwa@gmail.com" method="post" enctype="text/plain">
         <div class="row">
           <div class="col-sm-9">
             <div class="col-sm-6">
-              <input type="text" id="name" name="name" class="form-control"  required> 
-              <label for="name" class=""> <i class="fa fa-user"></i> Your name</label>
+              <input type="text" id="name" name="name" class="form-control"  required > 
+              <label for="name"> <i class="fa fa-user"></i> Your name</label>
             </div>
             <div class="col-sm-6">
               <input required type="text" id="email" name="email" class="form-control">
-              <label for="email" class=""> <i class="fa fa-envelope"></i> Your email</label>
+              <label for="email"> <i class="fa fa-envelope"></i> Your email</label>
             </div>
             <div class="col-sm-12">
               <input required type="text" id="subject" name="subject" class="form-control">
-              <label for="subject" class="">Subject</label>
+              <label for="subject" class="subject">Subject</label>
             </div>
             <div class="col-sm-12">
-              <textarea required type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
               <label for="message"> <i class='fa fa-comment'></i> Your message</label>
             </div>
-            <button type="button" class="btn btn-info" type="submit" id="send" name="send">Send</button>
+            <a href="mailto:chelseasabinesangwa@gmail.com"><button class="btn btn-info" type="submit" id="send" name="send">Send</button></a> 
+         
           </div>
           <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
@@ -72,7 +72,6 @@
             </ul>
           </div>
         </div>
-      </form>  
       </div>
     </div>
   </div>
