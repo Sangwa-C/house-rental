@@ -36,14 +36,14 @@ opacity: 0.8;width: 78%;height: 90%;
     }
 .images {
     width: 60%;
-    height: 100px;
+    height: 130px;
     margin-left: 10%;
 }
 /*   */
 /* The grid: equal columns that floats next to each other */
 .column {
     float: left;
-    width: 10%;
+    width: 13%;
     padding: 10px;
   }
   
@@ -89,4 +89,6 @@ opacity: 0.8;width: 78%;height: 90%;
     font-size: 35px;
     cursor: pointer;
   }
-  
+  #one ,#two ,#three ,#four{
+      display: none;
+  }

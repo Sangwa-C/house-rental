@@ -23,60 +23,81 @@
     It will direct you to the the gallery to view more about the house and other information.If you don't like the house go back to view other houses.</p>
     <div id="services">
    <div class="row" >
-     <div class="col-md-6" id="house1" class="menu">
+     <div class="col-md-6" id="house1" class="menu"><br>
        <img class="houses" src="images/house1.jpg"><br>
-       <span>For Rent</span><br>
-       <span>$1,800 per Month</span>
-       <a href="#one"><p id="para1" style="display:none;">Apartments<br><br>5 bed rooms<br> 4 bath rooms<br>Modern kitchen<br> Sitting and dining rooms<br>
-        Big garden<br> Nice views<br>Parking<br>Near the main road nyarutarama gacuriro<br></p></a>
-       </div>
-
-     <div class="col-md-6" id="house2" >
-        <img class="houses" src="images/house2.jpg"><br>
-        <span>For   Sell</span><br>
-       <span>$3,500,000</span>
-        <a href="#two"><p id="para2" style="display:none;">5 bed rooms<br> 4 bath rooms<br>Barcony<br>Modern kitchen<br> Sitting and dining rooms<br>Gym room <br>
-         Big garden<br> Nice views<br>Parking<br>Near the main road nyarutarama gacuriro<br></p></a>
+       <span>For Sell</span><br>
+       <span>$5,500,000</span>
+       <a href="#one"><p id="para1" style="display:none;"><br>Living house<br><br>5 bed rooms<br> 4 bath rooms<br>Modern kitchen<br> Sitting and dining rooms<br>
+        Big garden<br>Near the main road nyarutarama gacuriro<br></p></a>
+       </div><br>
+            <!-- gallery  the first image-->
+         <div id="one" class="gallery" >
+            <!-- The grid: four columns -->
+       <div class="row">
+        <div class="column">
+          <img src="images/din1.jpg" alt="Dining room" class="images" onclick="myFunction(this);">
         </div>
-   </div>
-
-   <div class="row" >
-      <div class="col-md-6" id="house3" class="menu">
-        <img class="houses" src="images/house3.jpg"><br>
-        <span>For Sell</span><br>
-        <span>$2,800,000</span>
-        <a href="#three"><p id="para3" style="display:none;">Living house<br><br>5 bed rooms<br> 4 bath rooms<br>Modern kitchen<br> Sitting and dining rooms<br>
-         Big garden<br> Nice views<br>Parking<br>Near the main road nyarutarama gacuriro<br></p></a>
+        <div class="column">
+          <img src="images/bed2.jpg" alt="Bedroom" class="images" onclick="myFunction(this);">
         </div>
- 
-      <div class="col-md-6" id="house4" >
-         <img class="houses" src="images/house4.jpg"><br>
-         <span>For   Sell</span><br>
-        <span>$3,500,000</span>
-         <a href="#four"><p id="para4" style="display:none;">5 bed rooms<br> 4 bath rooms<br>Barcony<br>Modern kitchen<br> Sitting and dining rooms<br>Gym room <br>
-          Big garden<br>Parking<br>Near the main road nyarutarama gacuriro<br></p></a>
+        <div class="column">
+          <img src="images/bath1.jpg" alt="Bathroom" class="images" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/kit1.jpg" alt="kitchen" class="images" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/gard1.jpg" alt="Garden" class="images" onclick="myFunction(this);">
+           </div>
+      </div>
+      
+      <!-- The expanding image container -->
+      <div class="containergallery">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:70%;height:600px;margin-left: 10%;">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+        <!-- <button class="back">Back</button> -->
+        <a href="index.html"><button> Back </button></a>
+        <button class="checkout" >Checkout</button>
+      </div>
          </div>
-    </div>
-  </div>
-         <!-- gallery  the first image-->
-         <div id="one" class="gallery" style="display:none;">
+
+<div class="col-md-6"  id="house2">
+        <img class="houses" src="images/house2.jpg"><br>
+        <span>For Rent</span><br>
+       <span>$ 2,000 per month</span>
+       <span Month></span>
+        <a href="#two"><p id="para2" style="display:none;">Apartment <br><br>3 bed rooms<br> 2 bath rooms<br>Barcony<br>Modern kitchen<br> Sitting and dining rooms<br>Gym room <br>
+         Barcony<br>Parking<br>Kibagabaga near pili pili<br></p></a>
+        </div><br>
+        <div id="two" class="gallery" >
+                
+            <!-- Container for the image gallery -->
          <!-- The grid: four columns -->
     <div class="row">
      <div class="column">
-       <img src="images/din1.jpg" alt="Dining room" class="images" onclick="myFunction(this);">
+       <img src="images/din2.jpg" alt="Dining room" class="images" onclick="myFunctionOne(this);">
      </div>
      <div class="column">
-       <img src="images/bed2.jpg" alt="Bedroom" class="images" onclick="myFunction(this);">
+       <img src="images/bed3.jpg" alt="Bedroom" class="images" onclick="myFunctionOne(this);">
      </div>
      <div class="column">
-       <img src="images/bath1.jpg" alt="Bathroom" class="images" onclick="myFunction(this);">
+       <img src="images/bath3.jpg" alt="Bathroom" class="images" onclick="myFunctionOne(this);">
      </div>
      <div class="column">
-       <img src="images/kit1.jpg" alt="kitchen" class="images" onclick="myFunction(this);">
+       <img src="images/kit3.jpg" alt="kitchen" class="images" onclick="myFunctionOne(this);">
      </div>
      <div class="column">
-         <img src="images/gard1.jpg" alt="Garden" class="images" onclick="myFunction(this);">
-        </div>
+        <img src="images/barc1.jpg" alt="Barcony" class="images" onclick="myFunctionOne(this);">
+      </div>
+        <div class="column">
+            <img src="images/park2.jpg" alt="Car park" class="images" onclick="myFunctionOne(this);">
+          </div>
    </div>
    
    <!-- The expanding image container -->
@@ -85,61 +106,118 @@
      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
    
      <!-- Expanded image -->
-     <img id="expandedImg" style="width:80%;height:500px;margin-left: 10%;">
+     <img id="expandedImg1" style="width:80%;height:500px;margin-left: 10%;">
    
      <!-- Image text -->
-     <div id="imgtext"></div>
-     <button class="back">Back</button>
+     <div id="imgtext1"></div>
    </div>
+   <a href="index.html"><button>Back</button></a>
+   <button class="checkout" >Checkout</button>
+   
       </div>
-      <!-- the gallery second image -->
-      <div id="two" class="gallery" style="display:none;">
-         
-          <!-- Container for the image gallery -->
-       <!-- The grid: four columns -->
-  <div class="row">
-   <div class="column">
-     <img src="images/din2.jpg" alt="Dining room" class="images" onclick="myFunctionOne(this);">
+
    </div>
-   <div class="column">
-     <img src="images/bed3.jpg" alt="Bedroom" class="images" onclick="myFunctionOne(this);">
-   </div>
-   <div class="column">
-     <img src="images/bath3.jpg" alt="Bathroom" class="images" onclick="myFunctionOne(this);">
-   </div>
-   <div class="column">
-     <img src="images/kit3.jpg" alt="kitchen" class="images" onclick="myFunctionOne(this);">
-   </div>
-   <div class="column">
-      <img src="images/barc1.jpg" alt="Barcony" class="images" onclick="myFunctionOne(this);">
-    </div>
-    <div class="column">
-        <img src="images/kit3.jpg" alt="kitchen" class="images" onclick="myFunctionOne(this);">
+  <!-- the second row  -->
+   <div class="row" >
+      <div class="col-md-6" id="house3" class="menu"><br>
+        <img class="houses" src="images/house3.jpg"><br>
+        <span>For Sell</span><br>
+        <span>$3,800,000 </span>
+        <a href="#three"><p id="para3" style="display:none;"><br>Living house<br><br>6 bed rooms<br> 4 bath rooms<br>Modern kitchen<br> Sitting and dining rooms<br>
+         Big garden<br> Nice views<br>Barcony<br>near the main road Rebero <br></p></a>
+        </div><br>
+        <div id="three" class="gallery" >
+                
+            <!-- Container for the image gallery -->
+         <!-- The grid: four columns -->
+    <div class="row">
+     <div class="column">
+       <img src="images/din3.jpg" alt="Dining room" class="images" onclick="myFunctionTwo(this);">
+     </div>
+     <div class="column">
+       <img src="images/bed4.jpg" alt="Bedroom" class="images" onclick="myFunctionTwo(this);">
+     </div>
+     <div class="column">
+       <img src="images/bath2.jpg" alt="Bathroom" class="images" onclick="myFunctionTwo(this);">
+     </div>
+     <div class="column">
+       <img src="images/kit2.jpg" alt="kitchen" class="images" onclick="myFunctionTwo(this);">
+     </div>
+     <div class="column">
+        <img src="images/barc3.jpg" alt="Barcony" class="images" onclick="myFunctionTwo(this);">
       </div>
       <div class="column">
-          <img src="images/p.jpg" alt="Car park" class="images" onclick="myFunctionOne(this);">
+          <img src="images/gym1.jpg" alt="Gym" class="images" onclick="myFunctionTwo(this);">
         </div>
- </div>
- 
- <!-- The expanding image container -->
- <div class="containergallery">
-   <!-- Close the image -->
-   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
- 
-   <!-- Expanded image -->
-   <img id="expandedImg1" style="width:80%;height:500px;margin-left: 10%;">
- 
-   <!-- Image text -->
-   <div id="imgtext1"></div>
- </div>
- 
+        <div class="column">
+            <img src="images/gard3.jpg" alt="Garden" class="images" onclick="myFunctionTwo(this);">
+          </div>
     </div>
-    <!-- the gallery 3rd image -->
-     
     
- 
+    <!-- The expanding image container -->
+    <div class="containergallery">
+     <!-- Close the image -->
+     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+     <!-- Expanded image -->
+     <img id="expandedImg2" style="width:80%;height:500px;margin-left: 10%;">
+    
+     <!-- Image text -->
+     <div id="imgtext2"></div>
+    </div>
+    <a href="index.html"><button>Back</button></a>
+    <button class="checkout" >Checkout</button>
+  </div>
+ <!-- second image -->
+      <div class="col-md-6" id="house4" >
+         <img class="houses" src="images/house4.jpg"><br>
+         <span>For Rent</span><br>
+        <span>$1,800,000  per Month</span>
+         <a href="#four"><p id="para4" style="display:none;">Apartment<br> <br>4 bed rooms<br> 4 bath rooms<br>Modern kitchen<br> Sitting and dining rooms<br>Gym room <br>
+          Parking<br><br>Office room <br> Near the main road Kagugu <br></p></a>
+         </div><br>
+
+         <div id="four" class="gallery" >
+            <!-- The grid: four columns -->
+       <div class="row">
+        <div class="column">
+          <img src="images/din4.jpg" alt="Dining room" class="images" onclick="myFunctionThree(this);">
+        </div>
+        <div class="column">
+          <img src="images/bed5.jpg" alt="Bedroom" class="images" onclick="myFunctionThree(this);">
+        </div>
+        <div class="column">
+          <img src="images/bath4.jpg" alt="Bathroom" class="images" onclick="myFunctionThree(this);">
+        </div>
+        <div class="column">
+          <img src="images/kit4.jpg" alt="kitchen" class="images" onclick="myFunctionThree(this);">
+        </div>
+        <div class="column">
+            <img src="images/office2.jpg" alt="office" class="images" onclick="myFunctionThree(this);">
+           </div>
+           <div class="column">
+              <img src="images/gym2.jpg" alt="Gym" class="images" onclick="myFunctionThree(this);">
+             </div>
+      </div>
+      
+      <!-- The expanding image container -->
+      <div class="containergallery">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg3" style="width:60% ;height:500px;margin-left: 10%;">
+      
+        <!-- Image text -->
+        <div id="imgtext3"></div>
+        <!-- <button class="back">Back</button> -->
+       
+
+      </div>
+      <a href="index.html"><button>Back</button></a>
+      <button class="checkout" >Checkout</button>
+         </div>
    
-
-
+  </div>
  </body>
  </html>
