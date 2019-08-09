@@ -1,0 +1,221 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    background-color:black;
+    color:white;
+    
+}
+
+#services {
+    margin-left: 10%;
+}
+h2 {
+    text-align: center;
+}
+.footer{
+  text-align: center;
+  border-top:solid black;
+  background-color: black;
+  color:white;
+}
+
+.logo{
+  float:right;
+  height:99px;
+  width:160px;
+  margin-right:200px;
+}
+span {
+    background-color: white;
+    color: black;
+}
+.services {
+    
+    margin-left:5%;
+}
+.houses {
+    width: 80%;
+    height:400px;
+    position: relative;
+}
+
+#para2 ,#para3, #para1 ,#para4 ,#para5 ,#para6  {
+    position: absolute;
+    top:6%;
+    font-size: 20px;
+    text-align: center;
+    color:white;
+    background-color: black;
+    opacity: 0.8;width: 76%;height: 84%;
+    display: none;
+    }
+.images {
+    width: 40%;
+    height: 130px;
+    margin-left: 10%;
+}
+/*   */
+/* /* The grid: equal columns that floats next to each other */
+ .column {
+    float: left;
+    width: 13%;
+    padding: 10px;
+  } */
+  
+  /* Style the images inside the grid */ */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+   
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .containergallery {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext , #imgtext1 ,#imgtext2 ,#imgtext3,#imgtext4 ,#imgtext5{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color:#3498DB  ;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  #one ,#two ,#three ,#four,#five{
+      display: none;
+  }
+
+  /* nnnnn */
+ /* Full-width input fields */
+
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  /* Set a style for all buttons */
+  button {
+    background-color:blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  .container {
+    padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+
+#one,#two,#three,#four,#five,#six{
+display: none;
+}
+
+
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 1000px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ }
+ .sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+ }
+ .sidepanel a:hover {
+  color: #f1f1f1;
+ }
+ .sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+ }
+ .openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color:black;
+  color: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  margin-top:20px;
+ }
+ .openbtn:hover {
+  background-color:#444;
+ }

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+     <script src="js/login.js"></script> 
+</head>
+<body>
+    <div id="navbar">
+        <nav>
+          <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="menuClose()" style="color:#B07D06">×</a>
+            <a href="index.html" style="color:#B07D06">Home</a>
+            <a href="about.html" style="color:#B07D06">About</a>
+            <a href="services.html" style="color:#B07D06">Services</a>
+            <a href="contact.html" style="color:#B07D06">Contact</a>
+            <a href="login.html" style="color:#B07D06">Login</a>
+            <a href="signup.html" style="color:#B07D06">Sign up</a>
+          </div>
+          <button class="openbtn" onclick="menuOpen()" style="color:#EAC406">☰ Menu</button>
+          <img src="images/16.png" class="logo">
+        </nav>
+      </div>
+    <div class="container">
+            <div class="jumbotron">
+
+                    <label>Add a picture</label>
+                    <input type="file" id="inpBilde">
+                   
+                  
+                  <main id="main">
+                
+                  </main> 
+                  <div class="form-group">
+                    <label for="location" >location</label>
+                    <input type="text" class="form-control" id="location" placeholder="kimironko">
+                  </div>
+                  <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" class="form-control" id="price">
+                  </div>
+                  <label for="type">Type of house</label>
+                  <select id="type">
+                    <option value="flat">flat</option>
+                    <option value="house">house</option>
+                    <option value="appartement">appartement</option>
+                    <option value="business">business house</option>
+                  </select><br>
+                
+                  <label for="negociable">Is it negociable?</label>
+                  <input type="radio" id="negociable" value="yes"> Yes<br>
+                <input type="radio" id="negociable" value="no">No<br>
+                <button type="submit" id="submitt" onClick="submit()">submit</button>
+                </form>
+                <div id="description">
+                
+                </div>
+                </div>
+    </div>
+    <footer class="footer">
+
+      <div class="container">
+        <img src=" images/16.png" style="height:150px;"><br>
+  
+        <a href="mailto:Galactichouse@gmail.com" style="color:bisque">Galactic-house@gmail.com</a> || +250788702494 <br>
+        <p>© 2019 GALACTIC HOUSES | SITE CREDITS</p>
+  
+      </div>
+  
+    </footer> 
+   
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+  var firebaseConfig = {
+     apiKey: "AIzaSyCqEFHSvURbNF2MvEYTcswtK7Uo32y-8mQ",
+     authDomain: "house-rental-e795d.firebaseapp.com",
+     databaseURL: "https://house-rental-e795d.firebaseio.com",
+     projectId: "house-rental-e795d",
+     storageBucket: "house-rental-e795d.appspot.com",
+     messagingSenderId: "975208588512",
+     appId: "1:975208588512:web:2b0b1467f4b76b6a"
+   };
+  firebase.initializeApp(firebaseConfig);
+  // Initialize Firebase
+ var database=firebase.database();
+ 
+
+ var storage=firebase.storage();
+   
+       var inpBilde=document.getElementById("inpBilde");
+       
+    var bildeurler=database.ref("bildeurler");
+    
+   
+    function lagreUrl(snap){
+     var url=snap.getDownloadURL();
+     console.log(url);
+      bildeurler.push(url);
+    }
+   function lastOppBilde(){
+      var bilde=this.files[0];
+      var bildenavn=storage.ref("minefinebilder/" + new Date());
+      bildenavn.put(bilde).then(lagreUrl);
+   
+    }
+     function visBilder(snap){
+     var url=snap.val();
+       main.innerHTML+='<img src="${url}">';
+    }
+    inpBilde.onchange=lastOppBilde;
+     bildeurler.on("child_added",visBilder);
+    
+   function submit(){
+    var infos={
+        location:document.getElementById("location").value,
+        price:document.getElementById("price").value,
+       type:document.getElementById("type").value,
+       negociable:document.getElementById("negociable").value
+        }
+
+
+    
+    if(infos.location!="" && infos.price!="" && infos.type!="" && infos.negociable!=""){
+        var ref=database.ref("infos");
+    ref.push(infos);
+    ref.once('value', function(snapshot){
+    if(snapshot.exists()){
+        var content = '';
+
+        snapshot.forEach(function(data){
+            var TaskTitle = data.val().location;
+            var price=data.val().price;
+            var negociable=data.val().negociable;
+            var JobId= data.val().price;
+            content = '<tr>';
+                $('#description').append(content);
+                content = '<td> ' + price + '</td><br> '
+                $('#description').append(content);
+                content = '<td>' + negociable + ' </td><br> '
+                $('#description').append(content);
+            content = '<td> ' + TaskTitle + ' </td><br>'; //column1
+            $('#description').append(content);
+            content = '<td> ' + JobId + ' </td><br>';//column2
+            $('#description').append(content);
+            content = ' </tr><br>'
+            $('#description').append(content);
+        });
+       
+        
+    }
+});
+    function errData(error){
+        console.log("error");
+        console.log(err);
+    }
+    }
+
+   
+    else{
+        alert("input nicely the form");
+    }
+   }
+
+       
+
+
+
+   
+   
+   
+   </script> 
+</body>
+</html>
