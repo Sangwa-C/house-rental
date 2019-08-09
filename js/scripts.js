@@ -24,6 +24,18 @@ $(document).ready(function(){
     $("#house4").mouseleave(function(){
         $("#para4").hide();
     });
+    $("#house5").mouseover(function(){
+        $("#para5").show();
+     });
+    $("#house5").mouseleave(function(){
+        $("#para5").hide();
+    });
+    $("#house6").mouseover(function(){
+        $("#para6").show();
+     });
+    $("#house6").mouseleave(function(){
+        $("#para6").hide();
+    });
     
     $("#house1").click(function(){
         $("#one").show();
@@ -34,6 +46,8 @@ $(document).ready(function(){
          $("#two").hide();
          $("#three").hide();
           $("#four").hide();
+          $("#house5").hide();
+          $("#house6").hide();
           
     });
     $("#house2").click(function(){
@@ -46,6 +60,8 @@ $(document).ready(function(){
           $("#four").hide();
          $("#five").hide();
          $("#one").hide();
+         $("#house5").hide();
+         $("#house6").hide();
     });
     
     $("#house3").click(function(){
@@ -57,7 +73,8 @@ $(document).ready(function(){
         $("#house2").hide();
          $("#house3").hide();
          $("#house4").hide();
-   
+         $("#house5").hide();
+         $("#house6").hide();
     });
     $("#house4").click(function(){
         $("#four").show();
@@ -68,16 +85,36 @@ $(document).ready(function(){
         $("#house2").hide();
          $("#house3").hide();
          $("#house4").hide();
-   
+         $("#house5").hide();
+         $("#house6").hide();
     });
-    // $("#house4").click(function(){
-    //     $("#one").hide();
-    //     $("#two").hide();
-    //      $("#three").hide();
-    //     $("#five").hide();
-    //     $("#four").show();
-    // });
-
+    $("#house5").click(function(){
+        $("#one").hide();
+        $("#two").hide();
+         $("#three").hide();
+        $("#four").hide();
+        $("#five").show();
+        $("#house1").hide();
+        $("#house2").hide();
+         $("#house3").hide();
+         $("#house4").hide();
+         $("#house5").hide();
+         $("#house6").hide();
+    });
+    $("#house6").click(function(){
+        $("#one").hide();
+        $("#two").hide();
+         $("#three").hide();
+        $("#four").hide();
+        $("#five").hide();
+        $("#six").show();
+        $("#house1").hide();
+        $("#house2").hide();
+         $("#house3").hide();
+         $("#house4").hide();
+         $("#house5").hide();
+         $("#house6").hide();
+    });
     // $("#house5").click(function(){
     //     $("#one").hide();
     //     $("#two").hide();
@@ -98,6 +135,16 @@ $(document).ready(function(){
     // //        $(".gallery").hide();
     // //        $(".menu").show();
     // //    });
+
+    var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
     });
 
 
@@ -161,3 +208,23 @@ function myFunctionFour(imgs) {
     // Show the container element (hidden with CSS)
     expandImg4.parentElement.style.display = "block"; 
 }
+function myFunctionFive(imgs) {
+    // Get the expanded image
+    var expandImg5 = document.getElementById("expandedImg5");
+    // Get the image text
+    var imgText5 = document.getElementById("imgtext5");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg5.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText5.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg5.parentElement.style.display = "block"; 
+}
+
+
+function menuOpen() {
+    document.getElementById("mySidepanel").style.width = "250px";
+   }
+   function menuClose() {
+    document.getElementById("mySidepanel").style.width = "0";
+   }
