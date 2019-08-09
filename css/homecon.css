@@ -1,0 +1,147 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:black;
+    color: whitesmoke;
+    padding: 10px 15px;
+    border: none;
+    margin-top:20px;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+  
+  .logo{
+    float:right;
+    height:99px;
+    width:160px;
+    margin-right:200px;
+  }
+  
+  #navbar{
+    background-color:black;
+    height:100px;
+  }
+  h5{
+    font-size:2.5em;
+  }
+  
+  /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+  .image{
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/01/a6/85/e5/sunset-beach-house.jpg");
+    /* background-attachment: fixed; */
+    height:400px;
+    background-size:cover;
+  }
+  
+  .quotes{
+    font-size: 3em;
+    padding:10%; 
+    color: white; 
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .dontknow{
+    font-family: 'Grenze', serif;
+    height:1500px;
+    /* margin:100px; */
+    font-size:1.6em
+  }
+  
+  .city{
+    background-color:#EFF9F6;
+    padding:100px;
+    padding-left:200px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+  .footer{
+    text-align: center;
+    border-top:solid black;
+    background-color: black;
+    color:white;
+  }
+  
+  .container{
+    margin-top:15px;
+  }
+  
+  /* for the contact section */
+  
+  #form{
+  margin-top:90px;
+  height:600px;
+  border-radius:50px;
+  }
+  
+  #contact{
+    background-image: url("https://a0.muscache.com/im/pictures/8495303d-7c60-4894-aadd-7e0645754817.jpg?aki_policy=xx_large");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:900px;
+    
+  }
+  
+  #send{
+    margin-left:300px;
+  }
+  
+  .col-sm-9{
+    margin-top: 50px;
+    line-height:60px;
+  }
+  
+  .col-md-3{
+    margin-top: 50px;
+    line-height:30px;
+  }
+  
+  
